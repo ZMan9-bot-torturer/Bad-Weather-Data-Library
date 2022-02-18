@@ -34,6 +34,7 @@ The function **`currentWeather()`** returns the current weather condition for a 
 #
 
 The function **`findPeak()`** returns the state with the current highest or lowest temperature in the US.
+#
 ### Examples (Assume state with current highest temperature is California with a temperature of 98.76 F)
 ##### Using name and temperature separately:
 **`var [state , highest_temperature] = findPeak("high");`**
@@ -46,3 +47,13 @@ The function **`findPeak()`** returns the state with the current highest or lowe
 ##### Outputting result of overall function:
 **`console.log(findPeak("high"));`** ==> **`['California' , 98.76]`**
 #
+###### @param high_or_low {string} - Whether the user wants to find the state with the **high**est current temperature or the **low**est current temperature - **`Options: "high" , "low"`**
+###### @return {list} - State with the highest or lowest temperature currently, and its current temperature
+**`function findPeak(high_or_low)`**
+#
+
+The function **`findWeather()`** returns a list of states in the US with a given weather condition.
+##### Example: **`var states_with_rain = findWeather("rain")`**
+###### @param weather {string} - Weather condition to search for - **`Options: ["Clear" , "Clouds" , "Drizzle" , "Dust" , "Fog" , "Haze" , "Mist" , "Rain" , "Sand" , "Snow" , "Thunderstorm"]`**
+###### @return {list} - A list of states with the desired weather condition
+**`function findWeather(weather)`**
