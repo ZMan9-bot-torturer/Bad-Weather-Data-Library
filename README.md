@@ -27,3 +27,9 @@ The function **`getTempAdv()`** returns advanced temperature data for a given ci
 #
 
 The function **`currentWeather()`** returns the current weather condition for a given city.
+##### Example: **`var weather_in_london = currentWeather("London")`**
+###### @param city {string} - Name of city to return weather for - `Example: "London"`
+###### @return {string} - Current weather condition for given city
+**`function currentWeather(city)`**
+#
+
